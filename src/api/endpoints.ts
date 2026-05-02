@@ -1,4 +1,5 @@
-const API_V2 = '/api/v2'
+const apiOrigin = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/+$/, '')
+const API_V2 = `${apiOrigin}/api/v2`
 
 export const apiEndpoints = {
   auth: {
